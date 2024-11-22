@@ -10,7 +10,7 @@ def gmean(*args):
         a += 1
         c = c * x
 
-    y = c**(1/a)
+    y = c**(1/len(args))
     return y
 
 print(gmean(2,2,5,7))
@@ -23,7 +23,7 @@ def pyramid(*args):
         print()
 
 
-print(pyramid(1,2,3,4))
+pyramid(1,2,3,4)
 
 #3
 def pyramid_2(*args):
@@ -32,6 +32,6 @@ def pyramid_2(*args):
             print(x, end="")
         print()
 
-print(pyramid_2(1,2,3,4))
+pyramid_2(1,2,3,4)
 
 
