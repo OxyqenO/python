@@ -9,7 +9,7 @@ def zadanie1():
         b = b + a**2
         print(b)
     return b
-#print(zadanie1())
+print(zadanie1())
 
 #zadanie 2
 def zadanie2():
@@ -19,7 +19,7 @@ def zadanie2():
         b = int(input())
         a *= b
     return a
-#print(zadanie2())
+print(zadanie2())
 
 #zadanie 3
 def zadanie3():
@@ -30,21 +30,18 @@ def zadanie3():
         if i != '1' and i != '2' and i != '3' and i != '4' and i != '5' and i != '6' and i != '7' and i != '8' and i != '9' and i != '0' and i != '%' and i != ' ' and i != ',' and i != '.' and i != '!':
             w += i
     print(w[::-3])
-#zadanie3()
+zadanie3()
 
-def encrypt_text(text, shift):
-    encrypted_text = ""
-    for char in text:
-        encrypted_text += chr(ord(char) + shift)
-    return encrypted_text
+def zadanie4():
+    def encrypt_text(text, shift):
+        encrypted_text = ""
+        for char in text:
+            encrypted_text += chr(ord(char) + shift)
+        return encrypted_text
+    print(encrypt_text('Hello, World!', 3)
+zadanie4()
 
-# Example usage
-text_to_encrypt = "Hello, World!"
-shift_value = 3
-encrypted = encrypt_text(text_to_encrypt, shift_value)
-print(f"Original text: {text_to_encrypt}")
-print(f"Encrypted text: {encrypted}")
-
+#zadanie 5        
 def zadanie5():
     a = float(input())
     b = float(input())
@@ -63,7 +60,7 @@ def zadanie5():
         if b > a:
             return b
     print(absMaximum(a,b))
-#zadanie5()
+zadanie5()
 
 #zadanie6
 def zadanie6():
@@ -73,7 +70,7 @@ def zadanie6():
             a *= i**2
         print(a)
     funkcjaArgs(5,-1,7)
-#zadanie6()
+zadanie6()
 
 #zadanie 7
 def zadanie7():
@@ -84,7 +81,7 @@ def zadanie7():
             number //= 10  # Usuń ostatnią cyfrę
         return total
     print(sum_of_digits(112))
-#zadanie7()
+zadanie7()
 
 #zadanie 8
 def zadanie8():
